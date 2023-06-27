@@ -83,9 +83,21 @@
   </style>
 </head>
 <body>
+
+  <head>
+    <title>JJTech E-commerce Website</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var hostnameElement = document.getElementById("hostname");
+        hostnameElement.innerText = window.location.hostname;
+      });
+    </script>
+  </head>
+
   <header>
     <h1>Welcome to JJTech E-commerce Website</h1>
     <p>Discover amazing products!</p>
+    <p>Running the website from instance host: <span id="hostname"></span></p>
   </header>
 
   <section>

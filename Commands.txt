@@ -2,7 +2,13 @@
 sudo yum install git -y
 
 # get the repo code (all branches)
-git clone --mirror https://github.com/cvamsikrishna11/ecommerce-web-app.git
+git clone https://github.com/cvamsikrishna11/ecommerce-web-app.git
+
+# to list out all branches
+git branch -a
+
+# switch to remote repo
+git checkout origin/docker
 
 # bulild Dockerfile in current image
 docker build -t ecomm-image .

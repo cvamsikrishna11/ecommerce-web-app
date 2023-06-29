@@ -1,3 +1,0 @@
-docker build -t ecomm-image .
-
-docker run -d -p 80:80 ecomm-image

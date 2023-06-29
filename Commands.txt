@@ -1,0 +1,11 @@
+# to install git
+sudo yum install git -y
+
+# get the repo code (all branches)
+git clone --mirror https://github.com/cvamsikrishna11/ecommerce-web-app.git
+
+# bulild Dockerfile in current image
+docker build -t ecomm-image .
+
+# run the image built on top as container
+docker run -d -p 80:80 ecomm-image

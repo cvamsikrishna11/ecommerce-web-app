@@ -9,12 +9,3 @@ ab -r -c 500 -n 5000000 http://ecs-d-publi-h9d4ufps3s74-2106267235.us-east-1.elb
 
 # To stop the apache bench processor (ctrl for windows, cmd for mac)
 ctrl/cmd + c
-
-# To exit from the running container (type exit & hit enter)
-exit
-
-# To check running containers
-docker ps -a
-
-# To kill the running container with the name httpd-ab
-docker kill httpd-ab
